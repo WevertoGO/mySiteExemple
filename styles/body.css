@@ -1,0 +1,335 @@
+header {
+    display: flex;
+    width: 100%;
+    background-color: #3f3d56;
+    justify-content: center;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 0.75fr auto;
+    width: 1080px;
+    padding: 0.75rem;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+header nav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    color: white;
+    position: relative;
+}
+
+header nav a:hover::before {
+    position: absolute;
+    left: -0.8rem;
+    top: 0.1rem;
+    font-size: 10px;
+    content: "►";
+    color: #8aff3cc9;
+    transition: all 150ms ease-in-out;
+}
+
+header .text-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #8aff3c;
+}
+
+.container-main {
+    background: white;
+    width: 100%;
+    /* fallback for old browsers */
+}
+
+.subcontainer-main {
+    margin: 0 auto;
+    max-width: 1080px;
+    height: 100vh;
+    background-color: white;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    flex-wrap: nowrap;
+    margin: auto 2.2rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main h1 {
+    font-size: 2.8rem;
+    letter-spacing: 0.01rem;
+    font-family: 'Staatliches', cursive;
+    word-spacing: 0.8rem;
+    line-height: 1;
+    color: black;
+    position: relative;
+}
+
+main h2 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    line-height: 1.2;
+    word-spacing: 0.5rem;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}
+
+main img {
+    width: 30rem;
+}
+
+main div:last-child {
+    position: relative;
+}
+
+main .btns button {
+    transition: all 100ms ease-in-out;
+    margin-top: 1.75rem;
+    width: 11rem;
+    padding: 0.7rem 1rem;
+    border-style: none;
+    border-radius: 5px;
+}
+
+main .btns button:nth-child(1) {
+    background-color: #3f3d56;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+main .btns button:nth-child(1):hover {
+    background-color: rgba(255, 255, 0, 0);
+    color: black;
+    border: 1px solid black;
+}
+
+main .btns button:nth-child(2) {
+    margin-left: 1rem;
+    background-color: #ff5d7e;
+    color: white;
+}
+
+main .btns button:nth-child(2):hover {
+    background-color: rgba(255, 255, 0, 0);
+    color: black;
+    border: 1px solid black;
+}
+
+.container-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.background-container-section {
+    background-image: linear-gradient(294deg, rgba(63, 61, 86, 0.7) 0%, rgba(63, 61, 86, 1) 100%), url('/bg-stone.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    color: white;
+    position: absolute;
+    z-index: -1;
+}
+
+section {
+    display: grid;
+    max-width: 1080px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    align-items: center;
+    grid-template-columns: auto;
+    column-gap: 3rem;
+    padding: 2rem;
+    z-index: 100;
+}
+
+section h3 {
+    display: grid;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+    /* fallback for old browsers */
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.25rem;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    z-index: 10;
+}
+
+section h3::before {
+    content: " ";
+    width: 6rem;
+    z-index: -1;
+    height: 0.4rem;
+    position: absolute;
+    background-color: #ff5d7e;
+    right: 0rem;
+    top: 1rem;
+}
+
+section .card-container {
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 2rem;
+    column-gap: 5rem;
+}
+
+section .card {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr 0.5fr;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+section .card div {
+    padding: 0.5rem;
+    background-color: white;
+    max-width: max-content;
+    border-radius: 1rem;
+}
+
+section .card img {
+    width: 3rem;
+}
+
+section .card h4 {
+    font-size: 1.15rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.2;
+    word-spacing: 0.5rem;
+    color: #6ef316;
+    font-family: 'Roboto', sans-serif;
+}
+
+section .card p {
+    font-size: 1.2rem;
+    line-height: 1.25;
+    word-spacing: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-article {
+    width: 100%;
+    background-color: #f2f2f2;
+    position: relative;
+    height: 100vh;
+}
+
+article {
+    display: grid;
+    max-width: 1080px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    grid-template-columns: auto auto;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+article h3 {
+    display: grid;
+    color: #3f3d56;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.5rem;
+    /* fallback for old browsers */
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 0.25rem;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    z-index: 10;
+}
+
+article h3::before {
+    content: " ";
+    width: 8rem;
+    z-index: -1;
+    height: 1.5rem;
+    position: absolute;
+    background-color: #6ef316;
+    left: 0rem;
+    top: 1.5rem;
+}
+
+article p {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    word-spacing: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+article p span {
+    font-size: 3rem;
+}
+
+article div img {
+    position: absolute;
+    width: 50%;
+    right: 10rem;
+    top: 5rem;
+    opacity: 0.2;
+}
+
+.container-portifolio {
+    width: 100%;
+    background-color: #3f3d56;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-portifolio div {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.container-portifolio div h3 {
+    font-size: 2rem;
+    height: max-content;
+    color: white;
+    word-spacing: 0.5rem;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container-portifolio div div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+
+.container-portifolio img {
+    width: 110%;
+    justify-self: center;
+}

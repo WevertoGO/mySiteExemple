@@ -1,0 +1,39 @@
+
+                            <article>
+                                <img src="/profissional.svg" alt="" />
+                                <h2>A pessoa certa</h2>
+                                <p>Site construido por um profissional da área de desenvolvimento Web</p>
+                            </article>
+
+
+                            <article>
+                                <img src="/tecnologias.svg" alt="" />
+                                <h2>Feito da maneira correta</h2>
+                                <p>As tecnologias utilizadas na construção dos sites são as consideradas basilares e fundamentais, as quais escalam em segurança e desempenho. São elas: HTML, CSS3 e JavaScrpit, nada mais</p>
+                            </article>
+
+                            <article>
+                                <img src="/gambiarra.svg" alt="" />
+                                <h2>Nada de Gambiarra</h2>
+                                <p>Não usamos WordPress, Wix, Dudda, ou qualquer outra forma de construtor de sites Web, afinal não são performáticos em relação as tecnologias supramencionadas e possuem segurança duvidosa </p>
+                            </article>
+
+                            <article>
+                                <img src="/person.svg" alt="" />
+                                <h2>Mostramos a sua empresa para o mundo </h2>
+                                <p>Além de melhor desempenho, seu site será costruido observando a indexação da busca do Google e os requisitos de acessibilidade</p>
+                            </article>
+
+                            mix-blend-mode: difference;
+
+
+
+
+.container-portifolio div h3 {
+        font-size: 2rem;
+        color: black;
+        word-spacing: 0.5rem;
+        font-family: 'Staatliches', cursive;
+        text-transform: uppercase;
+        text-align: center;
+    }
